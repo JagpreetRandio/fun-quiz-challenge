@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" >
-        <!-- Linked the stylesheet and the reset CSS file -->
+        <!-- Linked the styles.css and the reset.css file -->
         <link rel="stylesheet" href="./assets/CSS/reset.css"/>
         <link rel="stylesheet" href="./assets/CSS/styles.css"/>
         <title>Quiz Challenge</title>
@@ -11,13 +11,26 @@
     <body>
         <!-- Intro and the start of the quiz! -->
         <main id="intro">
-            <a id="highscores">VIEW HIGHSCORES</a>
+            <header>
+                <div class="header">
+                    <!--left corner to view high score-->
+                    <div>
+                        <button class="highscores-btn" id="score_check">HIGHSCORES</button>
+                    </div>
+                    <!--right corner to set a timer-->
+                    <div>
+                        <p id="timer-top" class="timer-top"> TIME LEFT: 60 s</p>
+                    </div>
+                </div>
+            </header>
             <section>
                 <h1> Coding Quiz Challenge </h1>
-                <p> Coding quiz challenge is a timed quiz! Try to answer the code related questions within the time limit! 
-                    Keep in mind that if you answer a question incorrectly, time will be deducted and your score will be penalized.
+                <p> Coding quiz challenge is a timed quiz! 
+                    Try to answer the code related questions within the time limit! 
+                    Keep in mind that if you answer a question incorrectly, 
+                    time will be deducted and your score will be penalized.
                 </p>
-                <button id="start"> Start Quiz </button>
+                <button id="start" class="startbtn"> START QUIZ </button>
             </section>
         </main>
         <!-- QUIZ -->
@@ -31,12 +44,12 @@
         <section id="results">
         </section>
         <!-- SHOW HIGHSCORES -->
-        <section>
-
+        <section id="highscores">
         </section>
+        <!--  -->
         <footer id="footer">
             <h3>
-            Made with ❤️️ by Jagpreet
+            Made with 🤍️ by Jagpreet
             </h3>
         </footer>
 

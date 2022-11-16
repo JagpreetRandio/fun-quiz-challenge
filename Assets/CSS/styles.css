@@ -1,0 +1,76 @@
+* {
+    font-family: 'Times New Roman', Times, serif;
+    box-sizing: border-box;
+}
+
+.header{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: center;
+    background-image: url("https://img.freepik.com/free-vector/hand-drawn-minimal-background_52683-67465.jpg?w=1800&t=st=1668630364~exp=1668630964~hmac=1e842adea8fd8a4a144490e9d7641287470a722ce1af5a1fb313cf2e74052179");
+    background-repeat: no-repeat;
+    background-position:center; 
+    background-size: cover;
+}
+
+main {
+    text-align: center;
+    justify-content: center;
+    flex: 1 0 auto;
+    margin-left:200px;
+    margin-right:200px;
+    margin-top: 200px;
+    margin-bottom: 200px;
+    padding: 5px;
+}
+header{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer {
+    text-align: center;
+}
+
+.timer{
+    background-color: #a88f82;
+    border-radius: 8px;
+    font-size: 24px;
+    cursor:pointer;
+    color: aliceblue;
+    padding: 10px;
+}
+
+.startbtn {
+    background-color: #a88f82;
+    border-radius: 8px;
+    font-size: 24px;
+    cursor:pointer;
+    color: aliceblue;
+    padding: 10px;
+  }
+.highscores-btn{
+    background-color: #a88f82;
+    border-radius: 8px;
+    font-size: 24px;
+    cursor:pointer;
+    color: aliceblue;
+    padding: 10px;
+}
+
+h1{
+    font-size: 50px;
+    color:#60785c;
+}
+
+p{
+    color: black;
+}
