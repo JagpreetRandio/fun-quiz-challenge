@@ -1,2 +1,2 @@
-# fun-quiz-challenge
-Quiz Challenge
+# Fun-Quiz-Challenge
+Quiz Challenge 

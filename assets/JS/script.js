@@ -2,7 +2,7 @@
 const questions = [{
   question: "The condition in an if / else statement is enclosed within _______.",
   answers: [ "Quotes", "Curly Brackets", "Parentheses", "Square Brackets"],
-  correctAnswer: "quotes"
+  correctAnswer: "Quotes"
 
 }, {
   question: "What does CSS stand for?",
