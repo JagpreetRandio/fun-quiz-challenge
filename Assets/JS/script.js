@@ -93,18 +93,33 @@ const questions = [
 ]
 
 // variables for the quiz
-var startBtn = document.getElementById("startBtn");
+var message = document.querySelector("#intro-message");
+var startbtn = document.querySelector("#startbtn");
+var intro = document.querySelector("#intro");
 var quizContainer = document.getElementById('quiz');
 
 // for questions 
-var questionPage = document.getElementById("questionPage");
+var questionSection = document.getElementById("#question-section");
+var askQuestion = document.querySelector("#ask_question");
+
+// Highscores 
+var results = document.querySelector("#results");
+var finalScore = document.querySelector("#final_score");
+var userInitial = document.querySelector("#initial");
+var highscore = document.querySelector("#highscores");
+var record = document.querySelector("#record");
+var check = document.querySelector("#check");
+var allDone = document.querySelector("#all-done");
 
 // buttons 
-var choiceA = document.getElementById("btnA");
-var choiceB = document.getElementById("btnB");
-var choiceC = document.getElementById("btnC");
-var choiceD = document.getElementById("btnD");
+var reButtons = document.querySelectorAll(".choices");
+var answerBtn1 = document.querySelector("#answer_btn1");
+var answerBtn2 = document.querySelector("#answer_btn2");
+var answerBtn3 = document.querySelector("#answer_btn3");
+var answerBtn4 = document.querySelector("#answer_btn4");
 var submitButton = document.getElementById('submit');
+var backBtn =document.querySelector("#back_btn");
+var clearBtn=document.querySelector("#clear_btn");
 
 // timer for quiz
 var timerEl = document.getElementById("timer");
@@ -135,7 +150,7 @@ function timeDown (){
     }, 1000);
 }
 function startQuiz (){
-    
+
 }
 
 
