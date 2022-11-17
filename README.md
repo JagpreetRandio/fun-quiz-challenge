@@ -1,11 +1,15 @@
 # Fun-Quiz-Challenge
 Quiz Challenge 
+
 ## Description
 
+A timed online code quiz challenge! There are 12 questions you have to answer before the time runs out. If you get a question wrong, time is penalized and points are taken away from your final score. 
 
 ## Deployment 
 
 URL of Deployment: 
+
+https://jagpreetrandio.github.io/fun-quiz-challenge/index.html
 
 ## Usage
 
