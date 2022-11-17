@@ -1,8 +1,8 @@
 // const questions for quiz
 
 const questions = [
-    
-    // first quesion
+
+    // first question
     {
         question: "The condition in an if / else statement is enclosed within _______.",
         choices: {
@@ -92,19 +92,79 @@ const questions = [
     }
 ]
 
+// variables for the quiz
+var startBtn = document.getElementById("startBtn");
+var quizContainer = document.getElementById('quiz');
+
+// for questions 
+var questionPage = document.getElementById("questionPage");
+
+// buttons 
+var choiceA = document.getElementById("btnA");
+var choiceB = document.getElementById("btnB");
+var choiceC = document.getElementById("btnC");
+var choiceD = document.getElementById("btnD");
+var submitButton = document.getElementById('submit');
+
 // timer for quiz
 var timerEl = document.getElementById("timer");
-timerEl.innerHTML="Time: "+ 0;
-var counter = 0;
-function startTimer(){
-    timerEl.innerHTML="Time: "+ 0
-    var timedOut= setInterval(function(){
-        timerEl.innerHTML="Time: "+ (60 - counter)
-        counter++;
-        if(counter >= 61){
-            clearInterval(timedOut);
-            quiz.style.display="none";
-            introSection.style.display="block";
-        }
-    },1000)
-    }
+var timeLeft = document.getElementById("timeLeft");
+var timeIsUp = document.getElementById("timeIsUp");
+var secondsLeft = 60;
+var questionNumber = 0;
+var totalScore = 0;
+var questionCount = 1;
+
+function timeDown (){
+        var timerInterval = setInterval(function () {
+
+          secondsLeft--;
+          timerEl.textContent = "Time left: " + secondsLeft + " s";
+    
+            if (secondsLeft <= 0){
+                clearInterval(timerInterval);
+                timerEl.textContent = "Time is up!"; 
+                // if time is up, show on score board content instead of "all done!"
+                finish.textContent = "Time is up!";
+                gameOver();
+
+            } else  if(questionCount >= questionSource.length +1) {
+                clearInterval(timerInterval);
+                gameOver();
+                } 
+    }, 1000);
+}
+function startQuiz (){
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// timerEl.innerHTML="Time: "+ 0;
+// var counter = 0;
+// function startTimer(){
+//     timerEl.innerHTML="Time: "+ 0
+//     var timedOut= setInterval(function(){
+//         timerEl.innerHTML="Time: "+ (60 - counter)
+//         counter++;
+//         if(counter >= 61){
+//             clearInterval(timedOut);
+//             quiz.style.display="none";
+//             introSection.style.display="block";
+//         }
+//     },1000)
+//     }

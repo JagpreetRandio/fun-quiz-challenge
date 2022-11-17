@@ -9,50 +9,73 @@
         <title>Quiz Challenge</title>
     </head>
     <body>
-        <!-- Intro and the start of the quiz! -->
-        <main id="intro">
-            <header>
-                <div class="header">
-                    <!--left corner to view high score-->
-                    <div>
-                        <button class="highscores-btn" id="score_check">HIGHSCORES</button>
-                    </div>
-                    <!--right corner to set a timer-->
-                    <div>
-                        <p id="timer-top" class="timer-top"> TIME LEFT: 60 s</p>
-                    </div>
+        <!-- timer and highscore placement -->
+        <header>
+            <div class="header">
+                <!-- highscores will go on the left side  -->
+                <div>
+                    <button class="btn" id="view-check">HIGHSCORES</button>
                 </div>
-            </header>
-            <section>
-                <h1> Coding Quiz Challenge </h1>
-                <p> Coding quiz challenge is a timed quiz! 
-                    Try to answer the code related questions within the time limit! 
-                    Keep in mind that if you answer a question incorrectly, 
-                    time will be deducted and your score will be penalized.
-                </p>
-                <button id="start" class="startbtn"> START QUIZ </button>
-            </section>
+                <div>
+                    <p id="timer-top" class="timer-top"> TIME LEFT: 60 s</p>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div>
+                <section class="intro" id="intro">
+                    <div class="intro-message" id="intro-message">
+                        <h1> Coding Quiz Challenge </h1>
+                        <p class="intro-ins" id="intro-ins"> 
+                            Coding quiz challenge is a timed quiz! 
+                            Try to answer the code related questions within the time limit! 
+                            Keep in mind that if you answer a question incorrectly, 
+                            time will be deducted and your score will be penalized.
+                        </p>
+                        <button id="startbtn" class="startbtn"> START QUIZ </button>
+                    </div>
+                </section>
+                <!-- QUESTIONS -->
+                <section class="question-section" id="question-section">
+                    <div>
+                    </div>
+                    <div>
+                        <h2 id = "ask_question">Ask the question</h2>
+                        <!-- QUESTION CHOICES FOR QUIZ -->
+                        <ul>
+                            <li><button class ="choices-btn" id="answer_btn1" value="a">Answera</button></li>
+                            <li><button class ="choices-btn" id="answer_btn2" value="b">Answerb</button></li>
+                            <li><button class ="choices-btn" id="answer_btn3" value="c">Answerc</button></li>
+                            <li><button class ="choices-btn" id="answer_btn4" value="d">Answerd</button></li>
+                        </ul>
+                    </div>
+                    
+                </section>
+
+            </div>
         </main>
-        <!-- QUIZ -->
-        <section id="quiz">
-        </section>
-        <!-- TIMER  -->
-        <div>
-            <h2 id="timer"></h2>
-        </div>
-        <!-- QUIZ RESULTS  -->
-        <section id="results">
-        </section>
-        <!-- SHOW HIGHSCORES -->
-        <section id="highscores">
-        </section>
-        <!--  -->
-        <footer id="footer">
+             <!-- QUIZ -->
+            <section id="quiz">
+
+            </section>
+            <!-- TIMER  -->
+            <div>
+              <h2 id="timer"></h2>
+            </div>
+            <!-- QUIZ RESULTS  -->
+            <section id="results">
+            </section>
+            <!-- SHOW HIGHSCORES -->
+            <section id="highscores">
+            </section>
+            <footer id="footer">
             <h3>
             Made with 🤍️ by Jagpreet
             </h3>
-        </footer>
+            </footer>
+        </div>
 
+    </main>
         <script src="./assets/JS/script.js"></script>
     </body>
 
