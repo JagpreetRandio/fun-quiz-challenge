@@ -1,0 +1,185 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body{
+    background-image: url("https://img.freepik.com/free-vector/vibrant-summer-ombre-background-vector_53876-105765.jpg?w=1800&t=st=1668686393~exp=1668686993~hmac=3271712c6873194bffb4632edd69ee1d377463cf050564c3f609c9d8d2046381");
+    /* background-repeat: no-repeat;
+    background-position:center; 
+    background-size: cover; */
+}
+
+:root {
+    --before-color: #629898;
+    --after-color: #008080;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 10px 100px 0;
+}
+
+.header a {
+    margin-left: 15px;
+}
+
+#timer {
+    margin: 0 25px 0 0;
+}
+
+
+.welcome-page {
+display: flex;
+flex-wrap: wrap;
+width: 100%;
+text-align: center;
+justify-content: center;
+margin-bottom: 15px;
+padding-top: 20px;
+
+}
+
+.welcome {
+    margin-bottom: 10px;
+    text-align: center;
+    width: 100%; 
+    color: #71326a;
+    font-size: 60px;
+}
+
+.intro{
+    color: black;
+}
+
+.container {
+    padding: 0;
+    margin: 0;
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: center;
+}
+
+
+#question-container {
+    width: 60%;
+
+}
+.highscore{
+    background-color: #c394be;
+    border-radius: 8px;
+    color:aliceblue;
+    padding: 10px;
+}
+.highscore:hover{
+    background-color: rgb(58, 82, 181);
+}
+
+.btn {
+    width: 100%;
+    background-color: var(--before-color);
+    color: white;
+    padding: 10px;
+    margin: 5px 0 5px 0; 
+    font-size: 20px;   
+}
+
+
+
+.controls {
+    display: flex;
+    justify-content: center;
+}
+
+.start-btn {
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 10px 20px;
+    color:aliceblue;
+    background-color: #c394be;
+    border-radius: 8px;
+    cursor:pointer;
+}
+
+
+.start-btn:hover,
+.btn:hover{
+    background-color: rgb(58, 82, 181);
+}
+
+.hide {
+    display: none;
+}
+footer{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin: 360px 10px 100px 0;
+}
+#question {
+    margin-bottom: 15px;
+    font-size: 24px;
+}
+
+
+.correct {
+    width: 100%;
+    font-size: 36px;
+    font-weight: bold;
+    margin-top: 10px;
+    text-align: center;
+    border-top: 3px solid gray;
+    border-bottom: 3px solid gray;
+    background-color: rgb(98, 164, 98);
+}
+
+
+.incorrect {
+    width: 100%;
+    font-size: 36px;
+    font-weight: bold;
+    margin-top: 10px;
+    text-align: center;
+    border-top: 3px solid gray;
+    border-bottom: 3px solid gray;
+    background-color: rgb(173, 107, 142);
+}
+
+.over {
+    text-align: center;
+    font-weight: bolder;
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+#score {
+    font-size: 26px;
+    font-family: 'Times New Roman', Times, serif;
+    margin-bottom: 10px;
+}
+
+#submit-btn {
+    margin-top: 10px;
+    width: 100%;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 10px 20px;
+    background-color: cornflowerblue;
+    cursor: pointer;
+}
+
+.score-card {
+    text-align: center;
+}
+
+.scores ol {
+    text-align: left;
+    padding-left: 47.5%;
+}
+
+#highscore {
+    margin-left: 10px;
+    cursor: pointer;
+}
